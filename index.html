@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>choinki&święta — Premium Collection 2025</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          cream: '#FAF6EF',
+          sand: '#F1EBDE',
+          ink: '#1C1B17',
+          forest: '#1F3D2B',
+          moss: '#2E5339',
+          muted: '#6E665A',
+          line: '#E4DCCC',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { background:#FAF6EF; color:#1C1B17; }
+  .eyebrow { letter-spacing:.28em; text-transform:uppercase; font-size:.68rem; }
+  .frame { box-shadow: 0 30px 60px -30px rgba(28,27,23,.25); }
+  .card-hover { transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+  .card-hover:hover { box-shadow: 0 24px 48px -28px rgba(28,27,23,.35); border-color:#cdbfa5; }
+  .tree-bg { background: transparent; }
+  img[src^="images/"] { mix-blend-mode: multiply; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    * { transition:none !important; }
+  }
+</style>
+</head>
+<body class="font-sans antialiased">
+
+<!-- Announcement bar -->
+<div class="bg-forest text-cream text-center text-[.7rem] tracking-[.18em] uppercase py-2.5 px-4">
+  Darmowa dostawa od 1500 zł &nbsp;•&nbsp; Gwarancja 5 lat &nbsp;•&nbsp; Wysyłka 24h
+</div>
+
+<!-- Navbar -->
+<header class="sticky top-0 z-50 bg-cream/85 backdrop-blur-md border-b border-line">
+  <nav class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-3 items-center h-16">
+    <ul class="hidden md:flex gap-7 text-[.78rem] tracking-[.14em] uppercase text-muted">
+      <li><a href="#kolekcje" class="hover:text-forest transition-colors cursor-pointer">Choinki</a></li>
+      <li><a href="#kolekcje" class="hover:text-forest transition-colors cursor-pointer">Girlandy</a></li>
+      <li><a href="#kolekcje" class="hover:text-forest transition-colors cursor-pointer">Wianki</a></li>
+      <li><a href="#zestaw" class="hover:text-forest transition-colors cursor-pointer">Zestawy</a></li>
+    </ul>
+    <a href="#" class="font-serif text-xl md:text-2xl text-ink text-left md:text-center cursor-pointer">
+      choinki<span class="italic">&amp;święta</span>
+    </a>
+    <div class="flex items-center justify-end gap-5 text-muted">
+      <button aria-label="Szukaj" class="hover:text-forest transition-colors cursor-pointer">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5" stroke-linecap="round"/></svg>
+      </button>
+      <button aria-label="Konto" class="hover:text-forest transition-colors cursor-pointer">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-6 8-6s8 2 8 6" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#" class="flex items-center gap-2 text-[.78rem] tracking-[.12em] uppercase hover:text-forest transition-colors cursor-pointer">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M6 7h13l-1.5 9.5a2 2 0 0 1-2 1.7H9a2 2 0 0 1-2-1.7L5.5 4H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">Koszyk</span>
+        <span class="bg-forest text-cream rounded-full w-5 h-5 flex items-center justify-center text-[.65rem]">1</span>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+  <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <div>
+      <p class="eyebrow text-muted mb-7">The Premium Collection · 2025</p>
+      <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-[1.05] text-ink">
+        Choinki, które<br/>wyglądają jak <span class="italic text-forest">żywe.</span>
+      </h1>
+      <p class="text-muted text-lg mt-7 max-w-md leading-relaxed">
+        Polski producent sztucznych choinek, girland i wianków premium. Technologia 3D, 100% PE.
+        Realistyczny wygląd, w którym każdy detal został odwzorowany z natury. Bez kompromisów. Bez sezonu.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-9">
+        <a href="#kolekcje" class="bg-forest text-cream px-8 py-4 text-sm tracking-[.12em] uppercase hover:bg-moss transition-colors cursor-pointer">Zobacz kolekcję</a>
+        <a href="#showroom" class="border border-ink/30 text-ink px-8 py-4 text-sm tracking-[.12em] uppercase hover:bg-ink hover:text-cream transition-colors cursor-pointer">Showroom</a>
+      </div>
+      <div class="flex gap-10 mt-12 pt-8 border-t border-line">
+        <div><p class="font-serif text-3xl text-ink">156</p><p class="eyebrow text-muted mt-1">Modeli</p></div>
+        <div><p class="font-serif text-3xl text-ink">100%</p><p class="eyebrow text-muted mt-1">PE</p></div>
+        <div><p class="font-serif text-3xl text-ink">5 lat</p><p class="eyebrow text-muted mt-1">Gwarancji</p></div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="p-6 md:p-10">
+        <img src="images/choinka-1.jpg" alt="Choinka premium Świerk TWIST 3D 220 cm" class="w-full h-[420px] md:h-[540px] object-contain mx-auto" />
+        <p class="eyebrow text-muted text-center mt-4">Świerk TWIST 3D · 220 cm</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="border-y border-line bg-sand">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 divide-x divide-line">
+    <div class="flex items-center gap-3 py-6 px-4">
+      <svg class="w-6 h-6 text-forest shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6l7-3z"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><p class="text-sm font-medium text-ink">5 lat gwarancji</p><p class="text-xs text-muted">Pełna gwarancja producenta</p></div>
+    </div>
+    <div class="flex items-center gap-3 py-6 px-4">
+      <svg class="w-6 h-6 text-forest shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path d="M3 7h11v8H3zM14 10h4l3 3v2h-7z" stroke-linejoin="round"/><circle cx="7" cy="17" r="1.6"/><circle cx="17.5" cy="17" r="1.6"/></svg>
+      <div><p class="text-sm font-medium text-ink">Darmowa dostawa</p><p class="text-xs text-muted">Powyżej 1500 zł</p></div>
+    </div>
+    <div class="flex items-center gap-3 py-6 px-4">
+      <svg class="w-6 h-6 text-forest shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div><p class="text-sm font-medium text-ink">Wysyłka 24h</p><p class="text-xs text-muted">Z magazynu w Warszawie</p></div>
+    </div>
+    <div class="flex items-center gap-3 py-6 px-4">
+      <svg class="w-6 h-6 text-forest shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.4"><path d="M21 15a2 2 0 0 1-2 2H8l-4 4V5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z" stroke-linejoin="round"/></svg>
+      <div><p class="text-sm font-medium text-ink">Wsparcie 7/7</p><p class="text-xs text-muted">Doradztwo i pomoc</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Collections -->
+<section id="kolekcje" class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+    <div>
+      <p class="eyebrow text-muted mb-4">— Kolekcja Premium</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-ink leading-tight">Trzy linie. Trzy nastroje.<br/>Jeden <span class="italic text-forest">standard jakości.</span></h2>
+    </div>
+    <a href="#" class="eyebrow text-forest border-b border-forest pb-1 hover:opacity-70 transition-opacity cursor-pointer self-start">Zobacz wszystkie kolekcje</a>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- card -->
+    <a href="#" class="group card-hover bg-white border border-line overflow-hidden cursor-pointer">
+      <div class="tree-bg h-72 flex items-center justify-center p-6">
+        <img src="images/choinka-1.jpg" alt="Świerk TWIST 3D" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-6 border-t border-line">
+        <p class="eyebrow text-muted mb-2">Bestseller</p>
+        <h3 class="font-serif text-2xl text-ink">Świerki <span class="italic">TWIST 3D</span></h3>
+        <p class="text-sm text-muted mt-2">12 modeli · od 890 zł</p>
+      </div>
+    </a>
+    <a href="#" class="group card-hover bg-white border border-line overflow-hidden cursor-pointer">
+      <div class="tree-bg h-72 flex items-center justify-center p-6">
+        <img src="images/choinka-1.jpg" alt="Silver Sky Exclusive" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-6 border-t border-line">
+        <p class="eyebrow text-muted mb-2">Exclusive</p>
+        <h3 class="font-serif text-2xl text-ink">Silver <span class="italic">Sky</span></h3>
+        <p class="text-sm text-muted mt-2">8 modeli · od 990 zł</p>
+      </div>
+    </a>
+    <a href="#" class="group card-hover bg-white border border-line overflow-hidden cursor-pointer">
+      <div class="tree-bg h-72 flex items-center justify-center p-6">
+        <img src="images/choinka-1.jpg" alt="Natura na pniu" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-6 border-t border-line">
+        <p class="eyebrow text-muted mb-2">Natura</p>
+        <h3 class="font-serif text-2xl text-ink">Natura <span class="italic">na pniu</span></h3>
+        <p class="text-sm text-muted mt-2">10 modeli · od 650 zł</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- Bestseller feature -->
+<section class="bg-sand border-y border-line">
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <div class="p-8 md:p-12 order-2 md:order-1">
+      <span class="inline-block bg-forest text-cream eyebrow px-4 py-1.5 mb-6">Produkt dnia</span>
+      <img src="images/choinka-1.jpg" alt="Świerk TWIST 3D 100% PE Premium" class="w-full h-[440px] object-contain" />
+    </div>
+    <div class="order-1 md:order-2">
+      <p class="eyebrow text-muted mb-4">— Bestseller · Premium</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-ink leading-tight">Świerk <span class="italic text-forest">TWIST 3D</span><br/>100% PE Premium</h2>
+      <p class="text-muted text-lg mt-6 leading-relaxed max-w-md">
+        Najwierniejsza naturalna choinka w naszej kolekcji. Każda gałąź formowana w technologii 3D z czystego polietylenu — igły niczym żywe, w pełnym świetle, z każdej strony.
+      </p>
+      <div class="grid grid-cols-2 gap-px bg-line my-8 border border-line">
+        <div class="bg-sand p-4"><p class="eyebrow text-muted">Wysokość</p><p class="font-serif text-xl text-ink mt-1">220 cm</p></div>
+        <div class="bg-sand p-4"><p class="eyebrow text-muted">Średnica</p><p class="font-serif text-xl text-ink mt-1">145 cm</p></div>
+        <div class="bg-sand p-4"><p class="eyebrow text-muted">Końcówki</p><p class="font-serif text-xl text-ink mt-1">2 540</p></div>
+        <div class="bg-sand p-4"><p class="eyebrow text-muted">Materiał</p><p class="font-serif text-xl text-ink mt-1">100% PE · 3D</p></div>
+      </div>
+      <div class="flex items-end gap-4 mb-6">
+        <p class="font-serif text-4xl text-ink">2 890 zł</p>
+        <p class="text-muted line-through mb-1">3 290 zł</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="#" class="bg-forest text-cream px-8 py-4 text-sm tracking-[.12em] uppercase hover:bg-moss transition-colors cursor-pointer">Dodaj do koszyka</a>
+        <a href="#" class="border border-ink/30 text-ink px-8 py-4 text-sm tracking-[.12em] uppercase hover:bg-ink hover:text-cream transition-colors cursor-pointer">Pełna specyfikacja</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Full collection grid -->
+<section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+    <div>
+      <p class="eyebrow text-muted mb-4">— Wybrane ze sklepu</p>
+      <h2 class="font-serif text-4xl md:text-5xl text-ink">Pełna kolekcja <span class="italic text-forest">Premium.</span></h2>
+    </div>
+    <a href="#" class="eyebrow text-forest border-b border-forest pb-1 hover:opacity-70 transition-opacity cursor-pointer self-start">Pełny sklep · 156 modeli</a>
+  </div>
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- product -->
+    <div class="group card-hover bg-white border border-line flex flex-col cursor-pointer">
+      <div class="tree-bg h-60 flex items-center justify-center p-5 relative">
+        <span class="absolute top-3 left-3 bg-forest text-cream eyebrow px-2.5 py-1">Bestseller</span>
+        <img src="images/choinka-1.jpg" alt="Świerk TWIST 3D 220 PE" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-5 border-t border-line flex flex-col flex-1">
+        <p class="eyebrow text-muted mb-1">Świerk · Premium</p>
+        <h3 class="font-serif text-lg text-ink leading-snug">Świerk TWIST 3D 220 PE</h3>
+        <p class="text-xs text-muted mt-1">220 cm · 2 540 końcówek</p>
+        <div class="flex items-center justify-between mt-4 pt-4 border-t border-line">
+          <p class="font-serif text-xl text-ink">2 890 zł</p>
+          <button aria-label="Dodaj do koszyka" class="w-9 h-9 border border-ink/25 flex items-center justify-center hover:bg-forest hover:text-cream hover:border-forest transition-colors cursor-pointer">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="group card-hover bg-white border border-line flex flex-col cursor-pointer">
+      <div class="tree-bg h-60 flex items-center justify-center p-5 relative">
+        <span class="absolute top-3 left-3 bg-ink text-cream eyebrow px-2.5 py-1">Exclusive</span>
+        <img src="images/choinka-1.jpg" alt="Ekskluzywny Świerk Silver Sky" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-5 border-t border-line flex flex-col flex-1">
+        <p class="eyebrow text-muted mb-1">Świerk · Exclusive</p>
+        <h3 class="font-serif text-lg text-ink leading-snug">Ekskluzywny Świerk Silver Sky</h3>
+        <p class="text-xs text-muted mt-1">210 cm · 2 100 końcówek</p>
+        <div class="flex items-center justify-between mt-4 pt-4 border-t border-line">
+          <p class="font-serif text-xl text-ink">990 zł</p>
+          <button aria-label="Dodaj do koszyka" class="w-9 h-9 border border-ink/25 flex items-center justify-center hover:bg-forest hover:text-cream hover:border-forest transition-colors cursor-pointer">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="group card-hover bg-white border border-line flex flex-col cursor-pointer">
+      <div class="tree-bg h-60 flex items-center justify-center p-5 relative">
+        <span class="absolute top-3 left-3 bg-moss text-cream eyebrow px-2.5 py-1">Natura</span>
+        <img src="images/choinka-1.jpg" alt="Choinka na pniu Świerk TWIST" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-5 border-t border-line flex flex-col flex-1">
+        <p class="eyebrow text-muted mb-1">Choinka · Natura na pniu</p>
+        <h3 class="font-serif text-lg text-ink leading-snug">Choinka na pniu Świerk TWIST</h3>
+        <p class="text-xs text-muted mt-1">180 cm · na drewnianym pniu</p>
+        <div class="flex items-center justify-between mt-4 pt-4 border-t border-line">
+          <p class="font-serif text-xl text-ink">465 zł</p>
+          <button aria-label="Dodaj do koszyka" class="w-9 h-9 border border-ink/25 flex items-center justify-center hover:bg-forest hover:text-cream hover:border-forest transition-colors cursor-pointer">+</button>
+        </div>
+      </div>
+    </div>
+    <div class="group card-hover bg-white border border-line flex flex-col cursor-pointer">
+      <div class="tree-bg h-60 flex items-center justify-center p-5 relative">
+        <span class="absolute top-3 left-3 border border-ink/30 text-ink eyebrow px-2.5 py-1 bg-white">Slim</span>
+        <img src="images/choinka-1.jpg" alt="Choinka SLIM Świerk R/K" class="h-full object-contain group-hover:scale-[1.03] transition-transform duration-500" />
+      </div>
+      <div class="p-5 border-t border-line flex flex-col flex-1">
+        <p class="eyebrow text-muted mb-1">Choinka · Slim</p>
+        <h3 class="font-serif text-lg text-ink leading-snug">Choinka SLIM Świerk R/K</h3>
+        <p class="text-xs text-muted mt-1">190 cm · wąska do wnętrz</p>
+        <div class="flex items-center justify-between mt-4 pt-4 border-t border-line">
+          <p class="font-serif text-xl text-ink">385 zł</p>
+          <button aria-label="Dodaj do koszyka" class="w-9 h-9 border border-ink/25 flex items-center justify-center hover:bg-forest hover:text-cream hover:border-forest transition-colors cursor-pointer">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Quality / 3D feature -->
+<section id="showroom" class="bg-forest text-cream">
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <div>
+      <p class="eyebrow text-cream/60 mb-4">— Jakość bez kompromisów</p>
+      <h2 class="font-serif text-4xl md:text-5xl leading-tight">100% PE.<br/><span class="italic">Realistyczny wygląd 3D.</span></h2>
+      <p class="text-cream/70 text-lg mt-6 leading-relaxed max-w-md">
+        Polietylenowe igły o wzór naturalnych przewodzone. Każda końcówka ma trzy wymiary, miękką teksturę i głębię koloru, która dodirzega nawet po drugiej stronie gałązki.
+      </p>
+      <div class="grid sm:grid-cols-2 gap-px bg-cream/15 mt-10 border border-cream/15">
+        <div class="bg-forest p-6">
+          <svg class="w-7 h-7 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z" stroke-linejoin="round"/></svg>
+          <p class="font-serif text-xl">Premium PE</p><p class="text-cream/60 text-sm mt-1">Najwyższej klasy polietylen. Trwałość, miękkość, naturalna głębia barwy.</p>
+        </div>
+        <div class="bg-forest p-6">
+          <svg class="w-7 h-7 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path d="M12 3 3 7.5 12 12l9-4.5z" stroke-linejoin="round"/><path d="M3 12l9 4.5L21 12M3 16.5 12 21l9-4.5" stroke-linejoin="round"/></svg>
+          <p class="font-serif text-xl">3D Real</p><p class="text-cream/60 text-sm mt-1">Trójwymiarowe formowanie igieł dla wiernego naturze efektu.</p>
+        </div>
+        <div class="bg-forest p-6">
+          <svg class="w-7 h-7 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path d="M4 21V9l8-5 8 5v12" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linejoin="round"/></svg>
+          <p class="font-serif text-xl">Stabilna konstrukcja</p><p class="text-cream/60 text-sm mt-1">Solidna rama stalowa w pełnym zakresie, łatwa w montażu.</p>
+        </div>
+        <div class="bg-forest p-6">
+          <svg class="w-7 h-7 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path d="M12 3l7 3v6c0 4.4-3 7.6-7 9-4-1.4-7-4.6-7-9V6l7-3z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="font-serif text-xl">Gwarancja 5 lat</p><p class="text-cream/60 text-sm mt-1">Pełna gwarancja producenta na wszystkie elementy konstrukcyjne.</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="bg-white frame p-8 md:p-12">
+        <p class="eyebrow text-muted text-right mb-4">Bliska detalu</p>
+        <img src="images/choinka-1.jpg" alt="Detal igieł 3D Real Edition" class="w-full h-[460px] object-contain" />
+        <p class="font-serif text-2xl text-ink mt-4">3D <span class="italic">Real</span> Edition</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bundle -->
+<section id="zestaw" class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+    <h2 class="font-serif text-4xl md:text-5xl text-ink leading-tight">Choinka. Girlanda. Wianek.<br/>Jedna <span class="italic text-forest">kompozycja.</span></h2>
+    <a href="#" class="eyebrow text-forest border-b border-forest pb-1 hover:opacity-70 transition-opacity cursor-pointer self-start">Wszystkie zestawy</a>
+  </div>
+  <div class="bg-white border border-line p-8 md:p-12 grid lg:grid-cols-2 gap-10 items-center frame">
+    <div>
+      <span class="inline-block bg-forest text-cream eyebrow px-4 py-1.5 mb-6">Komplet · -15%</span>
+      <p class="eyebrow text-muted mb-2">— Linia Real Tree 3D</p>
+      <h3 class="font-serif text-3xl text-ink">Zestaw <span class="italic">Premium 220</span></h3>
+      <p class="text-muted mt-3 max-w-md leading-relaxed">Pełna kompozycja w spójnej palecie głębokiej zieleni z subtelnymi szyszkami i akcentami światła.</p>
+      <ul class="mt-6 divide-y divide-line border-y border-line">
+        <li class="flex justify-between py-3 text-sm"><span class="text-ink">Świerk TWIST 3D · 220 cm</span><span class="text-muted">2 890 zł</span></li>
+        <li class="flex justify-between py-3 text-sm"><span class="text-ink">Girlanda Real Tree · 270 cm</span><span class="text-muted">399 zł</span></li>
+        <li class="flex justify-between py-3 text-sm"><span class="text-ink">Wianek Real 3D · 60 cm</span><span class="text-muted">299 zł</span></li>
+      </ul>
+      <div class="flex items-end gap-4 mt-6">
+        <p class="font-serif text-4xl text-ink">3 029 zł</p>
+        <p class="text-muted line-through mb-1">3 587 zł</p>
+      </div>
+      <a href="#" class="inline-block mt-6 bg-forest text-cream px-8 py-4 text-sm tracking-[.12em] uppercase hover:bg-moss transition-colors cursor-pointer">Wybierz zestaw</a>
+    </div>
+    <div class="grid grid-cols-3 gap-4">
+      <div class="tree-bg border border-line p-3 flex items-center justify-center aspect-[3/4]"><img src="images/choinka-1.jpg" alt="Świerk TWIST 3D" class="h-full object-contain" /></div>
+      <div class="tree-bg border border-line p-3 flex items-center justify-center aspect-[3/4]"><img src="images/choinka-1.jpg" alt="Girlanda Real Tree" class="h-full object-contain" /></div>
+      <div class="tree-bg border border-line p-3 flex items-center justify-center aspect-[3/4]"><img src="images/choinka-1.jpg" alt="Wianek Real 3D" class="h-full object-contain" /></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="bg-sand border-y border-line">
+  <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <h2 class="font-serif text-4xl md:text-5xl text-ink leading-tight">Mówią o nas jak o swojej<br/><span class="italic text-forest">drugiej choince.</span></h2>
+      <p class="text-muted max-w-xs text-right md:text-left">4,9/5 — ponad 12 800 ocen. Wszystkie weryfikowane przez Trusted Shops i Opineo.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <figure class="bg-white border border-line p-8">
+        <div class="flex gap-1 text-forest mb-4" aria-label="Ocena 5 na 5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+        </div>
+        <blockquote class="font-serif text-lg text-ink leading-relaxed italic">„Goście pytają, gdzie kupiliśmy taką choinkę. Po raz pierwszy mam wrażenie, że to żywe drzewo we wnętrzu.”</blockquote>
+        <figcaption class="mt-6 pt-6 border-t border-line text-sm"><span class="text-ink font-medium">Anna K.</span><span class="text-muted"> · Warszawa · TWIST 3D</span></figcaption>
+      </figure>
+      <figure class="bg-white border border-line p-8">
+        <div class="flex gap-1 text-forest mb-4" aria-label="Ocena 5 na 5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+        </div>
+        <blockquote class="font-serif text-lg text-ink leading-relaxed italic">„Jakość przerosła nasze oczekiwania. Składa się błyskawicznie, a po świętach pakuje wygodnie do kartonu.”</blockquote>
+        <figcaption class="mt-6 pt-6 border-t border-line text-sm"><span class="text-ink font-medium">Marek W.</span><span class="text-muted"> · Kraków · Silver Sky 220</span></figcaption>
+      </figure>
+      <figure class="bg-white border border-line p-8">
+        <div class="flex gap-1 text-forest mb-4" aria-label="Ocena 5 na 5">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="m10 1 2.6 5.5 6 .8-4.4 4.2 1.1 6L10 14.8 4.7 17.5l1.1-6L1.4 7.3l6-.8z"/></svg>
+        </div>
+        <blockquote class="font-serif text-lg text-ink leading-relaxed italic">„Kupiliśmy w zeszłym roku — w tym roku znajomi zamówili identyczną. Choinka wygląda jakby wrosła w nasz salon.”</blockquote>
+        <figcaption class="mt-6 pt-6 border-t border-line text-sm"><span class="text-ink font-medium">Iwona G.</span><span class="text-muted"> · Gdańsk · Zestaw Premium</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="max-w-3xl mx-auto px-6 py-20 md:py-28 text-center">
+  <p class="eyebrow text-muted mb-4">— Showroom &amp; Insights</p>
+  <h2 class="font-serif text-4xl md:text-5xl text-ink leading-tight">Pierwsze informacje<br/>o <span class="italic text-forest">nowej kolekcji.</span></h2>
+  <p class="text-muted mt-5 max-w-md mx-auto">Limitowane edycje, przedsprzedaż premium i pierwszeństwo zakupu. Bez spamu.</p>
+  <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mt-8" onsubmit="return false">
+    <label for="email" class="sr-only">Adres e-mail</label>
+    <input id="email" type="email" required placeholder="Twój adres e-mail" class="flex-1 bg-white border border-line px-5 py-4 text-ink placeholder:text-muted/70 focus:outline-none focus:border-forest transition-colors" />
+    <button class="bg-forest text-cream px-8 py-4 text-sm tracking-[.12em] uppercase hover:bg-moss transition-colors cursor-pointer">Zapisz mnie</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="bg-ink text-cream/80">
+  <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+    <div>
+      <a href="#" class="font-serif text-2xl text-cream">choinki<span class="italic">&amp;święta</span></a>
+      <p class="text-cream/50 text-sm mt-4 leading-relaxed">Polski producent choinek, girland i wianków premium. Technologia 3D · 100% PE.</p>
+    </div>
+    <div>
+      <p class="eyebrow text-cream/40 mb-4">Sklep</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#kolekcje" class="hover:text-cream transition-colors cursor-pointer">Choinki</a></li>
+        <li><a href="#kolekcje" class="hover:text-cream transition-colors cursor-pointer">Girlandy</a></li>
+        <li><a href="#kolekcje" class="hover:text-cream transition-colors cursor-pointer">Wianki</a></li>
+        <li><a href="#zestaw" class="hover:text-cream transition-colors cursor-pointer">Zestawy</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow text-cream/40 mb-4">Pomoc</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><a href="#" class="hover:text-cream transition-colors cursor-pointer">Dostawa i zwroty</a></li>
+        <li><a href="#" class="hover:text-cream transition-colors cursor-pointer">Gwarancja 5 lat</a></li>
+        <li><a href="#showroom" class="hover:text-cream transition-colors cursor-pointer">Showroom</a></li>
+        <li><a href="#" class="hover:text-cream transition-colors cursor-pointer">Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow text-cream/40 mb-4">Kontakt</p>
+      <ul class="space-y-2.5 text-sm text-cream/60">
+        <li>+48 800 700 600</li>
+        <li>salon@choinki-swieta.pl</li>
+        <li>Showroom · Warszawa, Pl. 5</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-cream/10">
+    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-cream/40">
+      <p>© 2025 choinki&amp;święta. Wszystkie prawa zastrzeżone.</p>
+      <p>Regulamin · Polityka prywatności</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
